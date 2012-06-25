@@ -138,6 +138,11 @@ header ul a {
   height:40px;
 }
 
+header img {
+  float:left;
+  padding-right: 1em;
+}
+
 strong {
   color:#222;
   font-weight:700;
