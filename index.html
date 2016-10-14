@@ -58,22 +58,39 @@ Toutefois, ces méthodes ne peuvent pas être intégralement adoptées dans tout
 </code></pre>
       </section>
       <footer>
+        <div class="bookmarklet-container">
+          <p style="text-align: center;">How Greaaat with Pierre ?</p>
+          <div>Découvrez comment serait Greaaat avec Pierre en glissant ce marque-page dans votre barre de favoris.</div><div style="height: 150px; padding-top: 30px;">
+            <a id="greaaat-anchor" style="padding-left: 54px; "
+              href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://apido.github.io/about/javascripts/how_greaaat_with_pierre.js?'+new Date().getTime();})()">
+              <img alt="How Greaaat with Pierre ?" style="width: 60px; padding-top: 0px; padding-left: 0px; margin-top: 10px;" src="http://greaaat.com/greaaat.jpg" draggable="true">
+            </a>
+          </div>
+        </div>
         <p>This project is maintained by <a href="https://github.com/apido">apido</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme adapted from <a href="https://github.com/orderedlist">orderedlist</a> by APiDo</small></p>
 
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
+    <script type="text/javascript">
+      function preventLocalClick(e) {
+        e.preventDefault();
+        alert('Pour découvrir comme ce serait Greaaat avec Pierre,\nGlissez moi dans votre barre de favoris,\net cliquez de nouveau.');
+      }
+      document.getElementById("greaaat-anchor").onclick = preventLocalClick;
+
+    </script>
+    <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
+    </script>
+    <script type="text/javascript">
             try {
               var pageTracker = _gat._getTracker("UA-32909211-1");
             pageTracker._trackPageview();
             } catch(err) {}
-          </script>
+    </script>
 
   </body>
 </html>
